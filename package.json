@@ -1,0 +1,30 @@
+{
+  "name": "olant_hillel_cypress_local",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oleksiilant/olant_Hellel_Cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oleksiilant/olant_Hellel_Cypress/issues"
+  },
+  "homepage": "https://github.com/oleksiilant/olant_Hellel_Cypress#readme",
+  "devDependencies": {
+    "cypress": "^15.14.2"
+  },
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test:e2e": "cypress run --e2e"
+  }
+}
+
+
