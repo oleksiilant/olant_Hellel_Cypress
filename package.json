@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test:e2e": "cypress run --e2e"
   },
   "repository": {
     "type": "git",
@@ -18,13 +20,7 @@
   },
   "homepage": "https://github.com/oleksiilant/olant_Hellel_Cypress#readme",
   "devDependencies": {
+    "@faker-js/faker": "^10.4.0",
     "cypress": "^15.14.2"
-  },
-  "scripts": {
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
-    "test:e2e": "cypress run --e2e"
   }
 }
-
-
