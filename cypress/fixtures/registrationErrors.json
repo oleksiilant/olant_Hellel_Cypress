@@ -1,0 +1,24 @@
+{
+  "name": {
+    "required": "Name required",
+    "invalid": "Name is invalid",
+    "length": "Name has to be from 2 to 20 characters long"
+  },
+  "lastName": {
+    "required": "Last name required",
+    "invalid": "Last name is invalid",
+    "length": "Last name has to be from 2 to 20 characters long"
+  },
+  "email": {
+    "required": "Email required",
+    "invalid": "Email is incorrect"
+  },
+  "password": {
+    "required": "Password required",
+    "invalid": "Password has to be from 8 to 15 characters long and contain at least one integer, one capital, and one small letter"
+  },
+  "repeatPassword": {
+    "required": "Re-enter password required",
+    "mismatch": "Passwords do not match"
+  }
+}
