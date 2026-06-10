@@ -17,7 +17,14 @@ export default class HomePage {
   }
 
   visit() {
-    cy.visit(BASE_URL, AUTH)
+    const baseUrl = Cypress.config('baseUrl')
+    const url = baseUrl && baseUrl !== 'https://example.cypress.io/' ? '/' : BASE_URL
+
+    return cy.env(['basicAuth']).then(({ basicAuth }) => {
+      cy.visit(url, {
+        auth: basicAuth || AUTH.auth,
+      })
+    })
   }
 
   openSignInModal() {

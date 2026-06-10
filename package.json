@@ -6,7 +6,9 @@
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "test:e2e": "cypress run --e2e"
+    "test:e2e": "cypress run --e2e",
+    "test:qauto": "cypress run --config-file cypress.qauto.config.js --spec cypress/e2e/hw_21_CLI.cy.js",
+    "test:qauto2": "cypress run --config-file cypress.qauto2.config.js --spec cypress/e2e/hw_21_CLI.cy.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   "homepage": "https://github.com/oleksiilant/olant_Hellel_Cypress#readme",
   "devDependencies": {
     "@faker-js/faker": "^10.4.0",
-    "cypress": "^15.14.2"
+    "cypress": "^15.14.2",
+    "mochawesome": "^7.1.4"
   }
 }
