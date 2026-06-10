@@ -1,3 +1,4 @@
+import { faker } from '@faker-js/faker'
 const BASE_URL = 'https://qauto.forstudy.space/'
 
 const AUTH = {
@@ -21,12 +22,11 @@ const selectors = {
 }
 
 const validUser = () => {
-  const timestamp = Date.now()
 
   return {
-    name: 'Olena',
-    lastName: 'Testova',
-    email: `olena.test.${timestamp}@example.com`,
+    name: 'Oleksii',
+    lastName: 'Lantuh',
+    email: `oleksii.lantuh.faker.${string.alphanumeric(12).toLowerCase()}@example.com`,
     password: 'Qwerty123',
   }
 }
