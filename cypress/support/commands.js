@@ -55,3 +55,19 @@ Cypress.Commands.add('login', (email, password) => {
   cy.get('#signinPassword').clear().type(password, { sensitive: true })
   cy.contains('.modal-footer button', 'Login').should('not.be.disabled').click()
 })
+
+Cypress.Commands.add('createExpence', (carId, expenceData) => {
+  // апі тут
+  return cy.request({
+    method: 'POST',
+    url: '/api/expenses',
+    body: {
+      carId,
+      reportedAt: expenceData.reportedAt,
+      mileage: expenceData.mileage,
+      liters: expenceData.liters,
+      totalCost: expenceData.totalCost,
+      forceMileage: false,
+    },
+  })
+})
